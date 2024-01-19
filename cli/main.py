@@ -2,6 +2,7 @@ import os
 import click
 import importlib
 
+
 class ComplexCLI(click.MultiCommand):
     def list_commands(self, ctx):
         commands = []
@@ -24,9 +25,8 @@ class ComplexCLI(click.MultiCommand):
             return
         return getattr(mod, name, None)
 
+
 @click.command(cls=ComplexCLI)
 def cli():
     """Welcome to Shake! An all-in-one cli utility tool!"""
     pass
-
-
