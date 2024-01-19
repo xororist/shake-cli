@@ -1,0 +1,24 @@
+# .gitignore
+
+# Ignore Python bytecode
+__pycache__/
+
+# Ignore built files
+build/
+dist/
+*.egg-info/
+
+# Ignore virtual environment
+venv/
+
+# Ignore system-specific files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore test results
+*.pytest_cache/

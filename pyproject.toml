@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shake"
+authors = [
+    {name = "Hugo Cachon"},
+]
+description = "Shake is a open source CLI for easily monitoring ressources consumed by a proccess"
+requires-python = ">=3.7"
+keywords = ["CLI", "monitoring"]
+license = {text = "MIT License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "click",
+    "psutil"
+]
+dynamic = ["version"]
+
+
+[project.scripts]
+shake = "cli.main:cli"
