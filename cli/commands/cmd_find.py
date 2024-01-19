@@ -36,8 +36,9 @@ def list_all_processes_sorted(processes):
 def get_process_by_name(processes, name):
     found_processes = [process for process in processes if process.name() == name]
     if found_processes:
+        max_pid_length = max(len(str(process.pid)) for process in found_processes)
         for process in found_processes:
-            print(f"[-] pid = {process.pid} - name = {process.name()}")
+            print(f"[-] pid = {process.pid:>{max_pid_length}} - name = {process.name()}")
     else:
         print(f"[x] No processes found with name: {name}")
 
@@ -47,5 +48,6 @@ def count_total_pids(processes):
 
 
 def display_processes(processes):
+    max_pid_length = max(len(str(process.pid)) for process in processes)
     for process in processes:
-        print(f"[-] pid = {process.pid} - name = {process.name()}")
+        print(f"[-] pid: {process.pid:>{max_pid_length}} | name: {process.name()}")
