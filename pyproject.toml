@@ -1,11 +1,11 @@
 [build-system]
-requires = ["setuptools", "setuptools-scm"]
+requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "shake"
 authors = [
-    {name = "Hugo Cachon"},
+    {name = "xororist"},
 ]
 description = "Shake is a open source CLI for easily monitoring ressources consumed by a proccess"
 requires-python = ">=3.7"
