@@ -1,24 +1,22 @@
 # Shake
 
-## Overview
-
-Shake is an open-source command-line interface (CLI) tool designed for effortless monitoring of resources consumed by a process. It provides a convenient way to track and analyze resource usage, making it a valuable tool for developers and system administrators.
+Shake is a lightweight open-source command-line interface (CLI) tool designed to facilitate monitoring of resources consumed by a process such as RAM, CPU, Network. 
+Its simple setup ensures immediate usability with minimal configuration.
 
 ## Project Information
 
 - **Name:** Shake
-- **Requires Python:** >= 3.7
-- **Keywords:** CLI, monitoring
+- **Requires Python & pip:** >= 3.7
 - **License:** MIT License
 
 ## Installation
 
 To install Shake, execute the following commands in your terminal:
-
+### Linux / MacOS
 ```bash
 git clone https://github.com/hugo-cachon/shake-cli.git
 cd shake-cli
-python3 -m pip install .
+./shake.sh
 ```
 
 ## Basic usage
@@ -59,6 +57,12 @@ Ouput:
 [-] Name: <name> 
 [-] Memory Usage: 650.582 MB 
 [-] CPU Usage: 1.90%
+
+[Network Usage]
+[-] Bytes Sent: 103.45 MB
+[-] Bytes Received: 2.31 GB
+[-] Packets Sent: 1,234
+[-] Packets Received: 15,789
 ```
 
 For more detailed information about arguments or options, feel free to use the --help command at any time.
@@ -69,6 +73,4 @@ This project is licensed under the MIT License - see the [LICENCE](https://githu
 
 ### Acknowledgments
 
-Thanks to the contributors who make Shake better with their valuable input and feedback.
-
-
+Thanks to the contributors who make Shake better with their valuable implementation and feedback!
