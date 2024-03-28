@@ -2,4 +2,4 @@ click~=8.1.7
 pytest~=7.4.4
 setuptools~=69.0.3
 psutil~=5.9.7
-black~=23.12.1
+black~=24.3.0
